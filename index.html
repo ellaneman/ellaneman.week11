@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Email Form Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" media="all">
+	<link rel="stylesheet" href="styles-form.css" media="all">
+</head>
+<body>
+	<header>
+		<nav class="main-nav">
+		</nav>
+	</header>
+	<div class="wrapper">
+		<div class="main">
+			<article>
+				<h1 class="form-heading">CONTACT ME</h1>
+				<div class="form-text">
+				<p>
+				A valid email address is required. Please ask any questions after following the form below.
+				</p>
+				</div>
+				<form method="post" action="http://formspree.io/nemae279@newschool.edu" autocomplete="off">
+					<fieldset>
+						<h2 class="site-account">YOUR INFO</h2>
+							<div class="fields">
+								<p class="row">
+									<label for="first-name">First Name:</label><input type="text" id="first-name" name="first_name" class="field-large" required="required" autofocus="autofocus" />
+								</p>
+								<p class="row">
+									<label for="last-name">Last Name:</label><input type="text" id="last-name" name="last_name" class="field-large" required="required" />
+								</p>
+								<p class="row">
+									<label for="email">Email:</label><input id="email" class="field-large" type="email" placeholder="yourname@example.com" name="email" required="required" />
+								</p>
+								<p class="row">
+									<label for="password">Password:</label><input id="password" type="password" name="password" required="required" />
+								</p>
+								<p class="row">
+									<label for="password2">Re-enter Password:</label><input id="password2" type="password" name="password2" required="required" />
+								</p>
+								<p class="row-motto">
+								<label for="motto">Questions or Comments:</label>
+								<textarea id="motto" name="motto" cols="20" rows="4" placeholder="Something pithy and witty. No pressure, though." class="field-large"></textarea>
+								</p>
+							</div>	
+					</fieldset>
+					<fieldset>
+						<h2 class="site-account">CHECK BOXES</h2>
+							<div class="fields-checkboxes">
+								<div class="row">
+									<input type="checkbox" id="email-ok-msg-from-users" name="email_signup[]" value="user-emails" />
+									<label for="email-ok-msg-from-users">It is okay to email me with messages from other users.</label>
+								</div>
+								<div class="row">
+									<input type="checkbox" id="email-ok-occasional-updates" name="email_signup[]" value="occasional-updates" />
+									<label for="email-ok-occasional-updates">It is okay to email me with news about upcoming events.</label>
+								</div>    			
+							</div>
+					</fieldset>
+					<div class="button-wrapper">
+						<input type="submit" value="Send Email" class="button" />
+					</div>
+				</form>
+			</article>
+		</div>
+	</div>
+	<footer class="site-info">
+	</footer>		
+</body>
+</html>
+	
